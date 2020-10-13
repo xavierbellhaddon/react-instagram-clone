@@ -4,7 +4,7 @@
 }
 
 html {
-  background-color: #fafafa;
+  background-color: #fafafa; 
 }
 
 .app__header {
@@ -36,4 +36,15 @@ html {
 
 .app__postsRight {
   margin-left: 20px;
+}
+
+@media (max-width: 895px) {
+  .app__header {
+    flex-direction: column;
+    align-items: center;
+  }
+  .app__postsRight {
+    display: none;
+  }
+
 }

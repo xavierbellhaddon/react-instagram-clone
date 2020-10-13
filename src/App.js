@@ -206,14 +206,6 @@ function App() {
         </div>
       </div>
 
-      {/* {user?.displayName ? (
-        <div>
-          <ImageUpload username={user.displayName} />
-        </div>
-      ) : (
-          <h3 className="uploadMessage">Log in to upload</h3>
-      )} */}
-
       {user ? (
         <div>
           <ImageUpload username={user.displayName} />

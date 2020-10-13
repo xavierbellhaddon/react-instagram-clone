@@ -8,17 +8,17 @@
     margin-bottom: 10px; 
 }
 
-.container {
+.container, .uploadMessage {
     width: 100%;
-    background-color: white;
-    border-top: 1px solid lightgray;
-    position: absolute;
-}
-
-.uploadMessage {
-    margin: auto;
     background-color: white;
     border-top: 1px solid lightgray;
     text-align: center;
     padding: 10px;
+    bottom: 0; 
+}
+
+@media (max-width: 895px) {
+    .upload {
+        width: 50%;
+    }
 }
