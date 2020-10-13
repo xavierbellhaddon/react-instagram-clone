@@ -49,9 +49,12 @@ function Post({ postID, user, username, caption, imageURL }) {
 
       <img className="post__image" alt="" src={imageURL} />
 
-      <h4 className="post__text">
-        <strong>{username}</strong> {caption}
-      </h4>
+      {caption && (
+        <h4 className="post__text">
+          <strong>{username}</strong> {caption}
+        </h4>
+      )}
+
       <div className="post__comments">
         {comments.map((comment) => (
           <p>
