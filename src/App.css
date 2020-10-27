@@ -4,6 +4,10 @@
 }
 
 html {
+  background-color: white;
+}
+
+body {
   background-color: #fafafa; 
 }
 
@@ -20,6 +24,7 @@ html {
 }
 
 .app__headerImage {
+  height: 2em;
   object-fit: contain;
 }
 
@@ -36,6 +41,8 @@ html {
 
 .app__postsRight {
   margin-left: 20px;
+  border: 1px solid lightgray;
+  height: min-content
 }
 
 @media (max-width: 895px) {
@@ -43,8 +50,11 @@ html {
     flex-direction: column;
     align-items: center;
   }
+  .app__posts {
+    flex-direction: column;
+  }
   .app__postsRight {
-    display: none;
+    margin-left: 0;
   }
 
 }
