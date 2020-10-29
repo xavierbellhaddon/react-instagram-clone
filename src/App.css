@@ -41,8 +41,10 @@ body {
 
 .app__postsRight {
   margin-left: 20px;
+  margin-bottom: 45px;
   border: 1px solid lightgray;
-  height: min-content
+  height: min-content;
+  max-width: 500px;
 }
 
 @media (max-width: 895px) {
@@ -51,7 +53,8 @@ body {
     align-items: center;
   }
   .app__posts {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    
   }
   .app__postsRight {
     margin-left: 0;
